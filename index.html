@@ -680,7 +680,7 @@
               <div>   
                 <h2 class="section-title">Contact Us<br></h2>
                 <div class="desc-text">
-                  <p><b>Email us at <i class="pe-7s-mail icon-gradient bg-ripe-malin"></i>&nbsp;bojja@mysuperbrain.com</b></p>  
+                  <p><b>Email us at <i class="pe-7s-mail icon-gradient bg-ripe-malin"></i>&nbsp;raghu@mysuperbrain.com</b></p>  
                   <p>or<br></p>
                   <p><b>Call/Whatsapp us at <i class="fa fa-phone-square icon-gradient bg-grow-early"></i>&nbsp; +91 9701320902</b></p>
               </div> 
@@ -693,7 +693,9 @@
         <div class="row">
           <!-- Start Col -->
           <div class="col-lg-6 col-md-12">
-          <form id="contactForm">
+            <!-- Replace with your Formspree endpoint -->
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form id="contact-form" action="https://formspree.io/f/mwpnpkbp" method="POST">
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -703,13 +705,13 @@
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" placeholder="Subject" id="msg_subject" class="form-control" name="msg_subject" required data-error="Please enter your subject">
+                  <input type="text" placeholder="Subject" id="subject" class="form-control" name="subject" required data-error="Please enter your subject">
                   <div class="help-block with-errors"></div>
                 </div> 
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
                   <div class="help-block with-errors"></div>
                 </div>                                 
               </div>
@@ -751,6 +753,13 @@
       </div>
     </section>
     <!-- Contact Us Section End -->
+
+    <!-- Success popup -->
+    <div id="success-popup" 
+        style="display:none; position:fixed; top:30%; left:50%; transform:translate(-50%, -50%);
+                background:#222; color:#fff; padding:20px; border-radius:8px; text-align:center;">
+    ✅ Thank you! Your message has been sent.
+    </div>
 
   <!-- Footer Section Start -->
   <footer style="background:#111; color:#fff;">
@@ -854,7 +863,8 @@
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>   
     <script src="js/main.js"></script>
-    
+    <script src="js/support-form.js"></script>
+
   </body>
 
 </html>
