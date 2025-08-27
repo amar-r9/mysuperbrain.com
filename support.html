@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Support | MySuperBrain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Same stylesheets as index.html -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/LineIcons.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/nivo-lightbox.css">
+  <link rel="stylesheet" href="css/main.css">    
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Force navbar background always visible */
+    .navbar {
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+      transition: none !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .navbar.scrolled,
+    .top-nav-collapse {
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+    }
+
+    .support-section {
+      padding: 140px 0 60px;
+    }
+
+    .support-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .support-header h2 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+
+    .support-header h2:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      border-radius: 2px;
+    }
+
+    .support-box {
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .support-box .form-control {
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 15px;
+    }
+
+    .btn-common {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #fff;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn-common:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .support-section {
+        padding: 120px 0 40px;
+      }
+      .support-box {
+        padding: 25px;
+      }
+    }
+
+    /* Social Icons */
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      background: #6a11cb;
+      transform: translateY(-3px);
+    }
+
+    .copyright {
+      text-align: center;
+      padding-top: 30px;
+      border-top: 1px solid #333;
+      margin-top: 30px;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
+
+  <!-- Header Section Start -->
+  <header id="home" class="hero-area">    
+    <div class="overlay"><span></span><span></span></div>
+    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="img/logo-1.png" alt="Logo" style="height: 60px;"></a>       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>                            
+            <li class="nav-item"><a class="nav-link" href="index.html#showcase">Showcase</a></li>       
+            <li class="nav-item"><a class="nav-link" href="#">Competitions</a></li>     
+            <li class="nav-item"><a class="nav-link" href="index.html#team">Team</a></li> 
+            <li class="nav-item"><a class="nav-link" href="index.html#blog">Superstars</a></li>  
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li> 
+            <li class="nav-item"><a class="btn btn-singin" href="#">Download</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+  </header>
+  <!-- Header Section End -->
+
+  <!-- Support Section -->
+  <section id="support" class="support-section">
+    <div class="container">
+      <div class="support-header">
+        <h2>Support</h2>
+        <p>If you face any issues, please reach out to us using the form below.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="support-box">
+            <!-- Replace with your Formspree endpoint -->
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form id="contact-form" action="https://formspree.io/f/mwpnpkbp" method="POST">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-common">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Success popup -->
+    <div id="success-popup" 
+        style="display:none; position:fixed; top:30%; left:50%; transform:translate(-50%, -50%);
+                background:#222; color:#fff; padding:20px; border-radius:8px; text-align:center;">
+    ✅ Thank you! Your message has been sent.
+    </div>
+
+  <!-- Footer Section Start -->
+    <footer style="background:#111; color:#fff;">
+    <!-- Footer Area Start -->
+    <section id="footer-Content" style="padding:20px 0; margin:0;">
+        <div class="container">
+        <!-- Start Row -->
+        <div class="row" style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between;">
+
+            <!-- Logo Column -->
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px; flex:1;">
+            <div class="footer-logo" style="margin-bottom:20px;">
+                <img src="img/logo-1.png" alt="Logo" 
+                    style="height:60px; filter:brightness(0) invert(1); margin-bottom:15px; padding:2px;">
+            </div>
+            <p style="font-size:14px; line-height:22px; color:#ccc;">
+                Inspiring creativity & imagination through art.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+            <!-- End Col -->
+
+            <!-- Right Side (Company + Media) -->
+            <div style="display:flex; gap:40px; flex-wrap:wrap; justify-content:flex-end; flex:1;"></div>
+            <!-- Company Links -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+                <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Company</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Home</a></li>
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">About Us</a></li>
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Career</a></li>
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Contact Us</a></li>
+                </ul>
+                </div>
+            </div>
+            <!-- End Col -->
+
+            <!-- Media Links -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+                <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Media</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Facebook</a></li>
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Twitter</a></li>
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Youtube</a></li>
+                    <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Instagram</a></li>
+                </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+                <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Legal</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                    <li><a href="privacy-policy.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Privacy Policy</a></li>
+                    <li><a href="terms-conditions.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Terms of Service</a></li>
+                    <li><a href="support.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Support</a></li>
+                </ul>
+                </div>
+            </div>
+            </div>
+            <!-- End Col -->
+
+        </div>
+        </div>
+            <div class="copyright" style="padding: 20px 0; margin:0;">
+                <p>&copy; 2023 MySuperBrain. All rights reserved.</p>
+            </div>
+    </section>
+    </footer>
+
+    <!-- Go To Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a> 
+
+  <!-- JS -->
+  <script src="js/jquery-min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/jquery.nav.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/nivo-lightbox.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/form-validator.min.js"></script>
+  <script src="js/contact-form-script.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/support-form.js"></script>
+</body>
+</html>
