@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="showcase, talent, all round developement, education, intelligence">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="author" content="MySuperBrain">
+    <title>MySuperBrain</title>
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="img/2.png" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/LineIcons.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/main.css">    
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+  /* Always keep navbar solid */
+  .navbar {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+    transition: none !important;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* optional: adds subtle depth */
+  }
+
+  .navbar.scrolled,
+  .top-nav-collapse {
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+  }
+
+.team-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+.team-header h2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    border-radius: 2px;
+}
+
+.team-header p {
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.team-member {
+    width: 300px;
+    perspective: 1000px;
+    margin-bottom: 30px;
+}
+
+.team-member-inner {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+.team-member:hover .team-member-inner {
+    transform: rotateY(180deg);
+}
+
+.team-front, .team-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-front {
+    background: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.team-back {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    transform: rotateY(180deg);
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.team-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f1f2f6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.team-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.team-role {
+    color: #6a11cb;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.team-desc {
+    color: #7f8c8d;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.team-back .team-name,
+.team-back .team-role {
+    color: white;
+}
+
+.team-back-desc {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.team-social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.team-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.team-social a:hover {
+    background: white;
+    color: #6a11cb;
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .team-member {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+</style>
+
+<style>
+.testimonial-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f1f2f6;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+</style>
+
+
+<style>
+
+  .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+  }
+
+  .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+      background: #6a11cb;
+      transform: translateY(-3px);
+  }
+
+  .copyright {
+    text-align: center;
+    border-top: 1px solid #333;
+    color: #777;
+  }
+</style>
+  </head>
+  
+  <body>
+
+    <!-- Header Section Start -->
+    <header id="home" class="hero-area">    
+      <div class="overlay">
+        <span></span>
+        <span></span>
+      </div>
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <a href="index.html" class="navbar-brand"><img src="img/logo-1.png" alt="" style="height: 60px;"></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#about">About</a>
+              </li>  
+              </li>                            
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#showcase">Showcase</a>
+              </li>       
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="">Competitions</a>
+              </li>     
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#team">Team</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#blog">Superstars</a>
+              </li>  
+              <li class="nav-item">
+                <a class="nav-link page-scroll" href="#contact">Contact</a>
+              </li> 
+              <li class="nav-item">
+                <a class="btn btn-singin" href="#">Download</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+
+      <div class="container">      
+            <div class="row space-100">
+                <div class="col-lg-6 col-md-12 col-xs-12">
+                    <div class="contents">
+                        <h2 class="head-title">Showcase Your Talents to the World</h2>
+                        <p>MySuperBrain helps students discover, develop and display their unique abilities with a global audience.</p>
+                        <div class="header-button">
+                            <a href="#signup" class="btn btn-border-filled">Get Started</a>
+                            <a href="#about" class="btn btn-border page-scroll">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 col-xs-12 p-0">
+                    <div class="intro-img">
+                        <img src="/img/intro-1.png" alt="Talent Showcase">
+                    </div>            
+                </div>
+            </div> 
+        </div>  
+    </header>
+    <!-- Header Section End --> 
+
+
+    <!-- About Section Start -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>About MySuperBrain</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="about-content">
+                        <h3>What We Offer</h3><br>
+                        <p>MySuperBrain.com is an online platform that gives you an opportunity to showcase your talents to the whole world. You can improve your talents and get analysis of your performances. There are courses offered in multiple areas - Painting, Art & Craft, Music, Dance, Financial Education, Communication Skills, Logical Thinking, Writing, Story telling etc.</p><br>
+                        <p>With MySuperBrain, you can bring out the true potential in you and get the recognition you truly deserve. Participate in the competitions, upload a talent and sink in the glory.</p><br>
+                        <p>Our platform is designed to help students of all ages discover their hidden talents, develop new skills, and connect with a community that celebrates creativity and achievement.</p><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+
+    <!-- Services Section Start -->
+    <!-- Services Section End -->
+
+
+
+    <!-- Business Plan Section Start -->
+    <section id="business-plan">
+      <div class="container">
+
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12 pl-0 pt-70 pr-5">
+            <div class="business-item-img">
+              <img src="img/business/business-img.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12 pl-4">
+            <div class="business-item-info">
+              <h3>Showcase your Skill</h3>
+              <p>Do you have a talent that you want to show the world? Well, don't waste anytime. Upload a video/ audio/ picture/ text showing your talents and the whole world will take notice.</p>
+
+              <a class="btn btn-common" href="#">download</a>
+            </div>
+          </div>
+          <!-- End Col -->
+
+        </div>
+      </div>
+    </section>
+    <!-- Business Plan Section End -->
+
+    <!-- Paintings Section Start -->
+    <section id="showcase">
+      <div class="container-fluid right-position">
+        <!-- Start Row -->
+        <div class="row gradient-bg">
+          <div class="col-lg-12">
+            <div class="showcase-text section-header text-center">  
+              <div>   
+                <h2 class="section-title">Top Kids' Paintings</h2>
+                <div class="desc-text">
+                  <p>Explore colorful and creative paintings made by kids.</p>  
+                  <p>Each artwork tells a unique story of imagination.</p>
+                </div>
+              </div> 
+            </div>
+          </div>
+
+        </div>
+        <!-- End Row -->
+        <!-- Start Row -->
+        <div class="row justify-content-center showcase-area">
+          <div class="col-lg-12 col-md-12 col-xs-12 pr-0">
+            <div class="showcase-slider owl-carousel">
+              <div class="item">
+                <div class="screenshot-thumb">
+                  <img src="img/paintings/01.jpg" class="img-fluid" alt="" />
+                  <div class="hover-content text-center">
+                    <div class="fancy-table">
+                      <div class="table-cell">
+                        <div class="single-text">
+                          <p>Icon , Web</p>
+                          <h5>Redesign Slack</h5>
+                        </div>
+                        <div class="zoom-icon">
+                          <a class="lightbox" href="img/paintings/01.jpg"><i class="lni-zoom-in"></i></a>
+                          <a href="#"><i class="lni-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="item">
+                <div class="screenshot-thumb">
+                  <img src="img/paintings/02.jpg" class="img-fluid" alt="" />
+                  <div class="hover-content text-center">
+                    <div class="fancy-table">
+                      <div class="table-cell">
+                        <div class="single-text">
+                          <p>Icon , Web</p>
+                          <h5>Redesign Slack</h5>
+                        </div>
+                        <div class="zoom-icon">
+                          <a class="lightbox" href="img/paintings/02.jpg"><i class="lni-zoom-in"></i></a>
+                          <a href="#"><i class="lni-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="screenshot-thumb">
+                  <img src="img/paintings/03.jpg" class="img-fluid" alt="" />
+                  <div class="hover-content text-center">
+                    <div class="fancy-table">
+                      <div class="table-cell">
+                        <div class="single-text">
+                          <p>Icon , Web</p>
+                          <h5>Redesign Slack</h5>
+                        </div>
+                        <div class="zoom-icon">
+                          <a class="lightbox" href="img/paintings/03.jpg"><i class="lni-zoom-in"></i></a>
+                          <a href="#"><i class="lni-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="screenshot-thumb">
+                  <img src="img/paintings/04.jpg" class="img-fluid" alt="" />
+                  <div class="hover-content text-center">
+                    <div class="fancy-table">
+                      <div class="table-cell">
+                        <div class="single-text">
+                          <p>Icon , Web</p>
+                          <h5>Redesign Slack</h5>
+                        </div>
+                        <div class="zoom-icon">
+                          <a class="lightbox" href="img/paintings/04.jpg"><i class="lni-zoom-in"></i></a>
+                          <a href="#"><i class="lni-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="screenshot-thumb">
+                  <img src="img/paintings/05.jpg" class="img-fluid" alt="" />
+                  <div class="hover-content text-center">
+                    <div class="fancy-table">
+                      <div class="table-cell">
+                        <div class="single-text">
+                          <p>Icon , Web</p>
+                          <h5>Redesign Slack</h5>
+                        </div>
+                        <div class="zoom-icon">
+                          <a class="lightbox" href="img/paintings/05.jpg"><i class="lni-zoom-in"></i></a>
+                          <a href="#"><i class="lni-link"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        <!-- End Row -->
+      </div>
+    </section>
+    <!-- Top Paintings Section End --> 
+
+    <!-- Client Testimoninals Section Start -->
+    <section id="testimonial" class="section">
+      <div class="container right-position">
+        <!-- Start Row -->
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="video-promo-content text-center">
+
+              <a id="play-video" class="video-play-button video-popup" href="https://www.youtube.com">
+                <span></span>
+              </a>
+
+            </div>
+          </div>
+        </div>
+        <!-- End Row -->
+        <!-- Start Row -->
+        <div class="row justify-content-center testimonial-area">
+          <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 pr-20 pl-20" style="overflow: hidden;padding-bottom: 60px">
+            <div id="client-testimonial" class="text-center owl-carousel">
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content-inner">
+                    <p class="description"><p>I always wondered why there so much focus on just marks and ranks, <br> and so little on the other talents that the kids have. <br> Brilliant idea and an amazing platform. Way to go guys! <br></p>
+                    <div class="author-info">
+                      <h5>Varun Chand Bandlamudi</span></h5>
+                    </div>
+                  </div>
+                  <div class="client-thumb">
+                    <img src="/img/testimonials/Varun.jpeg" alt="" class="testimonial-img">
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content-inner">
+                    <p class="description">My little one always loved painting and showing her paintings to different people. <br> MySuperBrain is making that so easy for her and millions like her. <br> All the Best! <br></p>
+                    <div class="author-info">
+                      <h5>Bhagavathi Telukuntla, Mother (USA)</span></h5>
+                    </div>
+                  </div>
+                  <div class="client-thumb">
+                    <img src="/img/testimonials/Bhagavathi.jpeg" alt="" class="testimonial-img">
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimonial-item">
+                  <div class="content-inner">
+                    <p class="description">MySuperBrain.com is giving an opportunity to students like me <br> who are not from metros to showcase my talents to the whole world. <br> Thanks to MySuperBrain. <br></p>
+                    <div class="author-info">
+                      <h5>Kushagra, Lakhanpur, Student</span></h5>
+                    </div>
+                  </div>
+                  <div class="client-thumb">
+                    <img src="/img/testimonials/kushagra.PNG" alt="" class="testimonial-img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Row -->
+      </div>
+    </section>
+    <!-- Client Testimoninals Section End --> 
+
+
+    <!-- Team section Start -->
+
+<section id="team" class="team-section">
+    <div class="container">
+        <div class="team-header">
+            <h2>Our Amazing Team</h2>
+            <p>Meet the passionate individuals behind MySuperBrain who are dedicated to helping students showcase their talents to the world.</p>
+        </div>
+        
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <div class="team-member-inner">
+                    <div class="team-front">
+                        <img src="/img/team/raghu.jpg" alt="Raghu" class="team-img">
+                        <h3 class="team-name">Raghu</h3>
+                        <p class="team-role">Co-founder & CEO</p>
+                        <p class="team-desc">Raghu is an alumnus of IIM Kozhikode. He is passionate about making a difference in the lives of students.</p>
+                    </div>
+                    <div class="team-back">
+                        <h3 class="team-name">Raghu</h3>
+                        <p class="team-role">Co-founder & CEO</p>
+                        <p class="team-back-desc">Raghu is an alumnus of IIM Kozhikode. He is passionate about making a difference in the lives of students. He firmly believes that students need to be provided opportunities in their areas of interest so that their full potential can be realized.</p>
+                        <p class="team-back-desc">Before MySuperBrain, he worked in the US and always believed that students across the world should be able to connect on one platform through their talents.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="lni lni-facebook-filled"></i></a>
+                            <a href="#"><i class="lni lni-instagram-filled"></i></a>
+                            <a href="#"><i class="lni lni-linkedin-filled"></i></a>
+                            <a href="#"><i class="lni lni-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <div class="team-member-inner">
+                    <div class="team-front">
+                        <img src="/img/team/yuva.jpg" alt="Yuvraj" class="team-img">
+                        <h3 class="team-name">Yuvraj</h3>
+                        <p class="team-role">Co-founder & COO</p>
+                        <p class="team-desc">Yuva is an alumnus of IIM Kozhikode. He strongly believes that education should not be restricted to the classroom.</p>
+                    </div>
+                    <div class="team-back">
+                        <h3 class="team-name">Yuvraj</h3>
+                        <p class="team-role">Co-founder & COO</p>
+                        <p class="team-back-desc">Yuva is an alumnus of IIM Kozhikode. He strongly believes that education should not be restricted to the classroom or the syllabus. A great believer in the potential of Gen Z and the driving force behind mysuperbrain.com.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="lni lni-facebook-filled"></i></a>
+                            <a href="#"><i class="lni lni-instagram-filled"></i></a>
+                            <a href="#"><i class="lni lni-linkedin-filled"></i></a>
+                            <a href="#"><i class="lni lni-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <div class="team-member-inner">
+                    <div class="team-front">
+                        <img src="/img/team/amar.jpeg" alt="Amar" class="team-img">
+                        <h3 class="team-name">Amar</h3>
+                        <p class="team-role">CTO</p>
+                        <p class="team-desc">Amar is the technical mastermind behind the platform that thousands of students use to showcase their talents.</p>
+                    </div>
+                    <div class="team-back">
+                        <h3 class="team-name">Amar</h3>
+                        <p class="team-role">CTO</p>
+                        <p class="team-back-desc">Amar is the technical mastermind behind the platform that thousands of students use to showcase their talents. He is continuously finding new ways to showcase student talents and provide opportunities to hone those talents.</p>
+                        <div class="team-social">
+                            <a href="#"><i class="lni lni-facebook-filled"></i></a>
+                            <a href="#"><i class="lni lni-instagram-filled"></i></a>
+                            <a href="#"><i class="lni lni-linkedin-filled"></i></a>
+                            <a href="#"><i class="lni lni-google"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Team section end-->
+
+
+    <!-- Blog Section -->
+    <!-- blog Section End -->
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="section">
+      <!-- Container Starts -->
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="contact-text section-header text-center">  
+              <div>   
+                <h2 class="section-title">Contact Us<br></h2>
+                <div class="desc-text">
+                  <p><b>Email us at <i class="pe-7s-mail icon-gradient bg-ripe-malin"></i>&nbsp;raghu@mysuperbrain.com</b></p>  
+                  <p>or<br></p>
+                  <p><b>Call/Whatsapp us at <i class="fa fa-phone-square icon-gradient bg-grow-early"></i>&nbsp; +91 9701320902</b></p>
+              </div> 
+            </div>
+          </div>
+
+        </div>
+        <!-- End Row -->
+        <!-- Start Row -->
+        <div class="row">
+          <!-- Start Col -->
+          <div class="col-lg-6 col-md-12">
+            <!-- Replace with your Formspree endpoint -->
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form id="contact-form" action="https://formspree.io/f/mwpnpkbp" method="POST">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                  <div class="help-block with-errors"></div>
+                </div>                                 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Subject" id="subject" class="form-control" name="subject" required data-error="Please enter your subject">
+                  <div class="help-block with-errors"></div>
+                </div> 
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                  <div class="help-block with-errors"></div>
+                </div>                                 
+              </div>
+              <div class="col-md-12">
+                <div class="form-group"> 
+                  <textarea class="form-control" id="message"  name="message" placeholder="Write Message" rows="4" data-error="Write your message" required></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <div class="submit-button">
+                  <button class="btn btn-common" id="submit" type="submit">Submit</button>
+                  <div id="msgSubmit" class="h3 hidden"></div> 
+                  <div class="clearfix"></div> 
+                </div>
+              </div>
+            </div>            
+          </form>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-1">
+            
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-4 col-md-12">
+            <div class="contact-img">
+              <img src="img/contact/01.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <!-- End Col -->
+          <!-- Start Col -->
+          <div class="col-lg-1">
+          </div>
+          <!-- End Col -->
+
+          </div>
+          </div>
+        <!-- End Row -->
+      </div>
+    </section>
+    <!-- Contact Us Section End -->
+
+    <!-- Success popup -->
+    <div id="success-popup" 
+        style="display:none; position:fixed; top:30%; left:50%; transform:translate(-50%, -50%);
+                background:#222; color:#fff; padding:20px; border-radius:8px; text-align:center;">
+    ✅ Thank you! Your message has been sent.
+    </div>
+
+  <!-- Footer Section Start -->
+  <footer style="background:#111; color:#fff;">
+    <!-- Footer Area Start -->
+    <section id="footer-Content" style="padding:20px 0; margin:0;">
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row" style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between;">
+
+          <!-- Logo Column -->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px; flex:1;">
+            <div class="footer-logo" style="margin-bottom:20px;">
+              <img src="img/logo-1.png" alt="Logo" 
+                  style="height:60px; filter:brightness(0) invert(1); margin-bottom:15px; padding:2px;">
+            </div>
+            <p style="font-size:14px; line-height:22px; color:#ccc;">
+              Inspiring creativity & imagination through art.
+            </p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <!-- Right Side (Company + Media) -->
+          <div style="display:flex; gap:40px; flex-wrap:wrap; justify-content:flex-end; flex:1;"></div>
+            <!-- Company Links -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+              <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Company</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Home</a></li>
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">About Us</a></li>
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Career</a></li>
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Col -->
+
+            <!-- Media Links -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+              <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Media</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Facebook</a></li>
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Twitter</a></li>
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Youtube</a></li>
+                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+              <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Legal</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                  <li><a href="privacy-policy.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Privacy Policy</a></li>
+                  <li><a href="terms-conditions.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Terms of Service</a></li>
+                  <li><a href="support.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+
+        </div>
+      </div>
+            <div class="copyright" style="padding: 20px 0; margin:0;">
+                <p>&copy; 2023 MySuperBrain. All rights reserved.</p>
+            </div>
+    </section>
+  </footer>
+
+
+
+    <!-- Go To Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a> 
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="js/jquery-min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.js"></script>      
+    <script src="js/jquery.nav.js"></script>    
+    <script src="js/scrolling-nav.js"></script>    
+    <script src="js/jquery.easing.min.js"></script>     
+    <script src="js/nivo-lightbox.js"></script>     
+    <script src="js/jquery.magnific-popup.min.js"></script>     
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>   
+    <script src="js/main.js"></script>
+    <script src="js/support-form.js"></script>
+
+  </body>
+
+</html>
+
