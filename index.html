@@ -28,7 +28,7 @@
 <style>
   /* Always keep navbar solid */
   .navbar {
-    background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+    background: #2575fc !important;
     transition: none !important;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* optional: adds subtle depth */
   }
@@ -216,7 +216,7 @@
 }
 </style>
 
-<style>
+<!-- <style>
 .testimonial-img {
     width: 100px;
     height: 100px;
@@ -226,7 +226,7 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     margin-bottom: 15px;
 }
-</style>
+</style> -->
 
 
 <style>
@@ -260,8 +260,92 @@
     color: #777;
   }
 </style>
+    <style>
+        /* Square image styling */
+        .screenshot-thumb {
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%; /* Creates a 1:1 aspect ratio */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .screenshot-thumb img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures image fills container without distortion */
+            transition: transform 0.3s ease;
+        }
+        
+        .screenshot-thumb:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Hover effect styling */
+        .hover-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .screenshot-thumb:hover .hover-content {
+            opacity: 1;
+        }
+        
+        /* Testimonial images */
+        .client-thumb {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        
+        .testimonial-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Carousel adjustments */
+        .showcase-slider .owl-item {
+            padding: 10px;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .screenshot-thumb {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+
+<style>
+.testimonial-bg {
+  background-image: url("img/CELEBRATINGTALENTS.png");
+  background-size: cover;     /* cover full section */
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 450px;          /* ensure section shows image */
+  display: flex;
+  align-items: center;        /* center content vertically */
+  justify-content: center;    /* optional: center horizontally */
+  color: #fff;                /* text more readable */
+  text-align: center;
+}
+
+</style>
   </head>
-  
   <body>
 
     <!-- Header Section Start -->
@@ -412,100 +496,34 @@
         <div class="row justify-content-center showcase-area">
           <div class="col-lg-12 col-md-12 col-xs-12 pr-0">
             <div class="showcase-slider owl-carousel">
+
               <div class="item">
                 <div class="screenshot-thumb">
                   <img src="img/paintings/01.jpg" class="img-fluid" alt="" />
-                  <div class="hover-content text-center">
-                    <div class="fancy-table">
-                      <div class="table-cell">
-                        <div class="single-text">
-                          <p>Icon , Web</p>
-                          <h5>Redesign Slack</h5>
-                        </div>
-                        <div class="zoom-icon">
-                          <a class="lightbox" href="img/paintings/01.jpg"><i class="lni-zoom-in"></i></a>
-                          <a href="#"><i class="lni-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
               </div>
+
               <div class="item">
                 <div class="screenshot-thumb">
                   <img src="img/paintings/02.jpg" class="img-fluid" alt="" />
-                  <div class="hover-content text-center">
-                    <div class="fancy-table">
-                      <div class="table-cell">
-                        <div class="single-text">
-                          <p>Icon , Web</p>
-                          <h5>Redesign Slack</h5>
-                        </div>
-                        <div class="zoom-icon">
-                          <a class="lightbox" href="img/paintings/02.jpg"><i class="lni-zoom-in"></i></a>
-                          <a href="#"><i class="lni-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
+
               <div class="item">
                 <div class="screenshot-thumb">
                   <img src="img/paintings/03.jpg" class="img-fluid" alt="" />
-                  <div class="hover-content text-center">
-                    <div class="fancy-table">
-                      <div class="table-cell">
-                        <div class="single-text">
-                          <p>Icon , Web</p>
-                          <h5>Redesign Slack</h5>
-                        </div>
-                        <div class="zoom-icon">
-                          <a class="lightbox" href="img/paintings/03.jpg"><i class="lni-zoom-in"></i></a>
-                          <a href="#"><i class="lni-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
+
               <div class="item">
                 <div class="screenshot-thumb">
                   <img src="img/paintings/04.jpg" class="img-fluid" alt="" />
-                  <div class="hover-content text-center">
-                    <div class="fancy-table">
-                      <div class="table-cell">
-                        <div class="single-text">
-                          <p>Icon , Web</p>
-                          <h5>Redesign Slack</h5>
-                        </div>
-                        <div class="zoom-icon">
-                          <a class="lightbox" href="img/paintings/04.jpg"><i class="lni-zoom-in"></i></a>
-                          <a href="#"><i class="lni-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
+
               <div class="item">
                 <div class="screenshot-thumb">
                   <img src="img/paintings/05.jpg" class="img-fluid" alt="" />
-                  <div class="hover-content text-center">
-                    <div class="fancy-table">
-                      <div class="table-cell">
-                        <div class="single-text">
-                          <p>Icon , Web</p>
-                          <h5>Redesign Slack</h5>
-                        </div>
-                        <div class="zoom-icon">
-                          <a class="lightbox" href="img/paintings/05.jpg"><i class="lni-zoom-in"></i></a>
-                          <a href="#"><i class="lni-link"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
         <!-- End Row -->
@@ -514,18 +532,19 @@
     <!-- Top Paintings Section End --> 
 
     <!-- Client Testimoninals Section Start -->
-    <section id="testimonial" class="section">
+    <section id="testimonial" class="testimonial-bg">
       <div class="container right-position">
         <!-- Start Row -->
         <div class="row">
           <div class="col-md-12 col-sm-12">
-            <div class="video-promo-content text-center">
-
-              <a id="play-video" class="video-play-button video-popup" href="https://www.youtube.com">
-                <span></span>
-              </a>
-
-            </div>
+            <!-- <div class="image-promo-content text-center">
+              <div class="promo-image-container">
+                <img src="img/CELEBRATINGTALENTS.png" alt="Featured Kids Painting" class="promo-image">
+              </div> -->
+              <!-- <div class="image-caption">
+                <p>Featured Painting of the Month</p>
+              </div> -->
+            
           </div>
         </div>
         <!-- End Row -->
@@ -760,6 +779,24 @@
                 background:#222; color:#fff; padding:20px; border-radius:8px; text-align:center;">
     ✅ Thank you! Your message has been sent.
     </div>
+
+
+  <div class="p-3 card text-center bg-dark rounded-0">
+		<div class="row">
+			<div class="col-6 text-end">
+				<a href="https://apps.apple.com/in/app/dwellite/id6557082414" target="_blank">
+					<img src="https://dwellite.com/assets/img/iosdownload.png" 
+						style="width: 200px;" alt="Download on the App Store">
+				</a>
+			</div>
+			<div class="col-6 text-start">
+				<a href="https://play.google.com/store/apps/details?id=com.app.dwellite" target="_blank">
+					<img src="https://dwellite.com/assets/img/androiddownload.png" 
+						style="width: 200px;" alt="Get it on Google Play">
+				</a>
+			</div>
+		</div>
+	</div>
 
   <!-- Footer Section Start -->
   <footer style="background:#111; color:#fff;">
