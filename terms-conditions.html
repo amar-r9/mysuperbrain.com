@@ -130,38 +130,6 @@
       display: none;
     }
     
-    /* Social Icons */
-    .social-icons {
-      display: flex;
-      gap: 15px;
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
-      transition: all 0.3s ease;
-    }
-
-    .social-icons a:hover {
-      background: #6a11cb;
-      transform: translateY(-3px);
-    }
-
-    .copyright {
-      text-align: center;
-      padding-top: 30px;
-      border-top: 1px solid #333;
-      margin-top: 30px;
-      color: #777;
-    }
-    
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .terms-section {
@@ -176,6 +144,40 @@
         padding: 25px;
       }
     }
+  </style>
+  <style>
+  .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+  }
+
+  .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: all 0.3s ease;
+  }
+
+  .social-icons a:hover {
+      background: #6a11cb;
+      transform: translateY(-3px);
+  }
+
+  .copyright {
+    padding: 20px 0 !important; 
+    margin:0 !important;
+    text-align: center !important;
+  }
+
+  .copyright p {
+    color: #777 !important;
+  }
   </style>
 </head>
 
@@ -200,25 +202,25 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html#home">Home</a>
+              <a class="nav-link page-scroll" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html#about">About</a>
+              <a class="nav-link page-scroll" href="#about">About</a>
             </li>                            
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html#showcase">Showcase</a>
+              <a class="nav-link page-scroll" href="#showcase">Showcase</a>
             </li>       
             <li class="nav-item">
               <a class="nav-link page-scroll" href="#">Competitions</a>
             </li>     
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html#team">Team</a>
+              <a class="nav-link page-scroll" href="#team">Team</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html#blog">Superstars</a>
+              <a class="nav-link page-scroll" href="../girlpowertelangana/index.html">Superstars</a>
             </li>  
             <li class="nav-item">
-              <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
+              <a class="nav-link page-scroll" href="#contact">Contact</a>
             </li> 
             <li class="nav-item">
               <a class="btn btn-singin page-scroll" href="#download">Download</a>
@@ -281,21 +283,24 @@
 
   <!-- Download Section Start -->
   <div id="download" class="p-3 card text-center bg-dark rounded-0">
-		<div class="row">
-			<div class="col-6 text-end">
-				<a href="" target="_blank">
-					<img src="https://dwellite.com/assets/img/iosdownload.png" 
-						style="width: 200px;" alt="Download on the App Store">
-				</a>
-			</div>
-			<div class="col-6 text-start">
-				<a href="https://play.google.com/store/apps/details?id=com.grapplesoft.msb_app" target="_blank">
-					<img src="https://dwellite.com/assets/img/androiddownload.png" 
-						style="width: 200px;" alt="Get it on Google Play">
-				</a>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+
+      <div class="col-6 text-start">
+        <a href="https://play.google.com/store/apps/details?id=com.grapplesoft.msb_app" target="_blank">
+          <img src="https://dwellite.com/assets/img/androiddownload.png" 
+            style="width: 200px;" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="col-6 text-end">
+        <a href="" target="_blank">
+          <img src="https://dwellite.com/assets/img/iosdownload.png" 
+            style="width: 200px;" alt="Download on the App Store">
+        </a>
+      </div>
+
+    </div>
+  </div>
   <!-- Download Section End -->
 
   <!-- Footer Section Start -->
@@ -308,18 +313,18 @@
 
           <!-- Logo Column -->
           <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px; flex:1;">
-            <div class="footer-logo" style="margin-bottom:20px;">
-              <img src="img/logo-1.png" alt="Logo" 
-                  style="height:60px; filter:brightness(0) invert(1); margin-bottom:15px; padding:2px;">
+            <div class="footer-logo" style="margin-bottom:8px;">
+              <img src="../img/logo-1.png" alt="Logo" 
+                  style="height:60px; filter:brightness(0) invert(1); padding:2px;">
             </div>
             <p style="font-size:14px; line-height:22px; color:#ccc;">
-              Inspiring creativity & imagination through art.
+              Inspiring creativity & imagination through art. Our platform helps children develop their skills in a fun and engaging way.
             </p>
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/mysuperbrain"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/mysuperbrain"><i class="fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@mysuperbrain22"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/msbdotcom/"><i class="fab fa-instagram"></i></a>
             </div>
           </div>
           <!-- End Col -->
@@ -331,10 +336,10 @@
               <div class="widget">
                 <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Company</h3>
                 <ul class="menu" style="list-style:none; padding:0; margin:0;">
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Home</a></li>
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">About Us</a></li>
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Career</a></li>
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Contact Us</a></li>
+                  <li><a href="../index.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Home</a></li>
+                  <li><a href="../about-us/about_us.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">About Us</a></li>
+                  <li><a href="../careers/careers.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Career</a></li>
+                  <li><a href="../contact-us/contact_us.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Contact Us</a></li>
                 </ul>
               </div>
             </div>
@@ -345,10 +350,10 @@
               <div class="widget">
                 <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Media</h3>
                 <ul class="menu" style="list-style:none; padding:0; margin:0;">
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Facebook</a></li>
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Twitter</a></li>
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Youtube</a></li>
-                  <li><a href="#" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Instagram</a></li>
+                  <li><a href="https://www.facebook.com/mysuperbrain" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Facebook</a></li>
+                  <li><a href="https://www.linkedin.com/company/mysuperbrain/" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">LinkedIn</a></li>
+                  <li><a href="https://www.youtube.com/@mysuperbrain22" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Youtube</a></li>
+                  <li><a href="https://www.instagram.com/msbdotcom/" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Instagram</a></li>
                 </ul>
               </div>
             </div>
@@ -357,9 +362,9 @@
               <div class="widget">
                 <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Legal</h3>
                 <ul class="menu" style="list-style:none; padding:0; margin:0;">
-                  <li><a href="privacy-policy.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Privacy Policy</a></li>
-                  <li><a href="terms-conditions.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Terms of Service</a></li>
-                  <li><a href="support.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Support</a></li>
+                  <li><a href="../privacy-policy.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Privacy Policy</a></li>
+                  <li><a href="../terms-conditions.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Terms of Service</a></li>
+                  <li><a href="../support.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Support</a></li>
                 </ul>
               </div>
             </div>
@@ -368,11 +373,12 @@
 
         </div>
       </div>
-            <div class="copyright" style="padding: 20px 0; margin:0;">
-                <p>&copy; 2023 MySuperBrain. All rights reserved.</p>
+            <div class="copyright">
+                <p>&copy; 2025 MySuperBrain. All rights reserved.</p>
             </div>
     </section>
   </footer>
+  <!-- Footer Section End -->
 
   <!-- Go To Top Link -->
   <a href="#" class="back-to-top">

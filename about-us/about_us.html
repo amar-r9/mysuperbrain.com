@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Privacy Policy | MySuperBrain</title>
+  <title>About Us | MySuperBrain</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Know about MySuperBrain.com and what can you get here.">
 
   <!--====== Favicon Icon ======-->
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
   
   <!-- Same stylesheets as index.html -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/LineIcons.css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/owl.theme.css">
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/nivo-lightbox.css">
-  <link rel="stylesheet" href="css/main.css">    
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/LineIcons.css">
+  <link rel="stylesheet" href="../css/owl.carousel.css">
+  <link rel="stylesheet" href="../css/owl.theme.css">
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+  <link rel="stylesheet" href="../css/nivo-lightbox.css">
+  <link rel="stylesheet" href="../css/main.css">    
+  <link rel="stylesheet" href="../css/responsive.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <style>
     /* Always keep navbar solid */
     .navbar {
       background: #2575fc !important;
       transition: none !important;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* optional: adds subtle depth */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
     }
 
     .navbar.scrolled,
@@ -35,19 +36,17 @@
       background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
     }
 
-
-    /* Additional styles for privacy policy page */
-    .privacy-section {
+    /* About Us page styles */
+    .about-section {
       padding: 100px 0 60px;
-      /* background: #f9f9f9; */
     }
     
-    .privacy-header {
+    .about-header {
       text-align: center;
       margin-bottom: 50px;
     }
     
-    .privacy-header h2 {
+    .about-header h2 {
       font-size: 2.5rem;
       color: #2c3e50;
       margin-bottom: 15px;
@@ -57,7 +56,7 @@
       padding-bottom: 15px;
     }
     
-    .privacy-header h2:after {
+    .about-header h2:after {
       content: '';
       position: absolute;
       bottom: 0;
@@ -69,77 +68,108 @@
       border-radius: 2px;
     }
     
-    .privacy-content {
+    .about-content {
       background: #fff;
       padding: 40px;
       border-radius: 8px;
       box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
     }
     
-    .privacy-content h5 {
+    .about-content h5 {
       color: #6a11cb;
       font-weight: 600;
       margin: 25px 0 15px;
       font-size: 1.25rem;
     }
     
-    .privacy-content p, .privacy-content li {
+    .about-content h6 {
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      font-weight: 500;
+    }
+    
+    .about-content p, .about-content li {
       color: #555;
       line-height: 1.7;
       margin-bottom: 15px;
     }
     
-    .privacy-content ul {
+    .about-content ul, .about-content ol {
       padding-left: 20px;
     }
     
-    .privacy-content ul li {
+    .about-content ul li, .about-content ol li {
       margin-bottom: 10px;
       position: relative;
     }
     
-    .last-updated {
-      background: #f8f9fa;
-      padding: 15px;
-      border-left: 4px solid #6a11cb;
-      margin: 30px 0;
+    .about-content table {
+      width: 100%;
+      margin: 20px 0;
+      border-collapse: collapse;
+    }
+    
+    .about-content table tr {
+      border-bottom: 1px solid #eee;
+    }
+    
+    .about-content table td {
+      padding: 8px 10px;
+    }
+    
+    .about-content table td:first-child {
+      font-weight: 600;
+      color: #6a11cb;
+      width: 120px;
+    }
+    
+    .category-badge {
+      display: inline-block;
+      padding: 3px 10px;
       border-radius: 4px;
+      margin-right: 5px;
+      font-weight: 600;
+    }
+    
+    .text-justify {
+      text-align: justify;
     }
   </style>
 
   <style>
-    .social-icons {
-        display: flex;
-        gap: 15px;
-        margin-top: 20px;
-    }
+  .social-icons {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+  }
 
-    .social-icons a {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.1);
-        color: white;
-        transition: all 0.3s ease;
-    }
+  .social-icons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      transition: all 0.3s ease;
+  }
 
-    .social-icons a:hover {
-        background: #6a11cb;
-        transform: translateY(-3px);
-    }
+  .social-icons a:hover {
+      background: #6a11cb;
+      transform: translateY(-3px);
+  }
 
-    .copyright {
-        padding: 20px 0 !important; 
-        margin:0 !important;
-        text-align: center !important;
-    }
+  .copyright {
+    padding: 20px 0 !important; 
+    margin:0 !important;
+    text-align: center !important;
+  }
 
-    .copyright p {
-        color: #777 !important;
-    }
+  .copyright p {
+    color: #777 !important;
+  }
   </style>
 </head>
 
@@ -157,7 +187,7 @@
     </div>
     <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
       <div class="container">
-        <a href="index.html" class="navbar-brand"><img src="img/logo-1.png" alt="" style="height: 60px;"></a>       
+        <a href="index.html" class="navbar-brand"><img src="../img/logo-1.png" alt="" style="height: 60px;"></a>       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <i class="lni-menu"></i>
         </button>
@@ -194,69 +224,79 @@
   </header>
   <!-- Header Section End -->
 
-  <!-- Privacy Policy Section Start -->
-  <section id="privacy" class="privacy-section">
+  <!-- About Us Section Start -->
+  <section id="about-us" class="about-section">
     <div class="container">
-      <div class="privacy-header">
-        <h2>Privacy Policy</h2>
-        <p>Last Updated: May 27, 2022</p>
+      <div class="about-header">
+        <h2>About Us</h2>
+        <p>Learn more about MySuperBrain and our mission</p>
       </div>
       
-      <div class="privacy-content">
-        <p>Bojja IT Solutions PVT LTD built the MySuperBrain app as a Free app. This SERVICE is provided by Bojja IT Solutions PVT LTD at no cost and is intended for use as is.</p>
-        <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
-        <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
-        <p>The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at MySuperBrain unless otherwise defined in this Privacy Policy.</p>
+      <div class="about-content">
+        <h6>MySuperBrain.com is an attempt to bring out the all-rounder in every student. Every student is special, but for a lot of reasons we do not see the full potential of students come to fruition. It is our aim to Discover, Improve and Showcase the skills of students on a global platform.</h6>
         
-        <h5>Information Collection and Use</h5>
-        <p>For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy.</p>
-        <p>The app does use third-party services that may collect information used to identify you.</p>
-        <p>Link to the privacy policy of third-party service providers used by the app:</p>
-        <ul>
-          <li><a href="#" style="color: #6a11cb;">Google Play Services</a></li>
-          <li><a href="#" style="color: #6a11cb;">Apple App Store</a></li>
-          <li><a href="#" style="color: #6a11cb;">Firebase Analytics</a></li>
-        </ul>
+        <h6 class="text-justify">MySuperBrain.com is suitable for students in grades 4 to 12. In these age groups, we provide age appropriate activities, content and educational games that prepares them for a better future. MySuperBrain.com is based on years of research in the field of Developmental Psychology, Cognitive Learning, technology to help students become world beaters. We work with a single-minded focus on improving the skills of students. We strongly believe that we can build a better planet only when our kids are given the right opportunities.</h6>
         
-        <h5>Log Data</h5>
-        <p>We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol ("IP") address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</p>
+        <h5>Our content, activities, quizzes and competitions are categorized into four groups:</h5>
         
-        <h5>Cookies</h5>
-        <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.</p>
-        <p>This Service does not use these "cookies" explicitly. However, the app may use third-party code and libraries that use "cookies" to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.</p>
+        <table>
+          <tbody>
+            <tr>
+              <td>Kids:</td>
+              <td>Grades 1 to 3</td>
+            </tr>
+            <tr>
+              <td>Junior:</td>
+              <td>Grades 4 to 6</td>
+            </tr>
+            <tr>
+              <td>Senior:</td>
+              <td>Grades 7 to 9</td>
+            </tr>
+            <tr>
+              <td>Super Senior:</td>
+              <td>Grades 10 to 12</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h5 class="text-justify">MySuperBrain.com provides the following benefits to the students:</h5>
         
-        <h5>Service Providers</h5>
-        <p>We may employ third-party companies and individuals due to the following reasons:</p>
-        <ul>
-          <li>To facilitate our Service;</li>
-          <li>To provide the Service on our behalf;</li>
-          <li>To perform Service-related services; or</li>
-          <li>To assist us in analyzing how our Service is used.</li>
-        </ul>
-        <p>We want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.</p>
+        <ol>
+          <li>
+            <span class="category-badge" style="background-color: rgba(238, 130, 238, 0.2); color: violet;">COMPETITIONS</span><br/>
+            Students can participate in competitions from anywhere and at their convenience. It is an opportunity for students to showcase their skills in different intelligence areas to a global audience and get the recognition they truly deserve.
+          </li>
+          <li>
+            <span class="category-badge" style="background-color: rgba(75, 0, 130, 0.2); color: indigo;">QUIZZES</span><br/>
+            Quizzes are conducted in areas like Mathematics, GK, English, Science, Current affairs etc. where students have an opportunity to test their knowledge. As soon as the students submit their entries, we give them the solutions so that their knowledge can be improved. Students also score points for doing well.
+          </li>
+          <li>
+            <span class="category-badge" style="background-color: rgba(0, 0, 255, 0.2); color: blue;">KNOWLEDGE BASE</span><br/>
+            Articles are posted on various topics like Health, Leadership, GK, Number skills and Science to improve the knowledge of students.
+          </li>
+          <li>
+            <span class="category-badge" style="background-color: rgba(0, 128, 0, 0.2); color: green;">ANALYSIS</span><br/>
+            In the school, students get to know where they stand on the tests conducted at the school. The group of students is at the most fifty, but in real world, the students compete with millions of students from different backgrounds, geographies and cultures. We believe that every student should be prepared for the competition that awaits them a few years down the line. We provide students detailed analysis of their performances by comparing it with thousands of students from different places.
+          </li>
+          <li>
+            <span class="category-badge" style="background-color: rgba(255, 255, 0, 0.2); color: #888800;">BLOG</span><br/>
+            We understand that the creativity of students is not limited to the competitions that we conduct. We, therefore, provide blogs for students. It is an opportunity for students to put in their views, ideas, works etc. on an online platform and reach thousands of students, parents, teachers and other experts. It provides a continuous vent to the students to showcase their creativity. The content is properly moderated and no is safe and secure.
+          </li>
+        </ol>
         
-        <h5>Security</h5>
-        <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
+        <h4>POINTS</h4>
+        <h6>
+          Students can score points by doing well in the competitions and quizzes. It is a way to improve knowledge, showcase skills and also let the world know what they are capable of. The top ten students get on to the "Hall of Fame". Hall of Fame is the ultimate leader board for students on MySuperBrain.com.
+        </h6>
         
-        <h5>Links to Other Sites</h5>
-        <p>This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.</p>
-        
-        <h5>Children's Privacy</h5>
-        <p>We do not knowingly collect personally identifiable information from children. We encourage all children to never submit any personally identifiable information through the Application and/or Services. We encourage parents and legal guardians to monitor their children's Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to us through the Application and/or Services, please contact us. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).</p>
-        
-        <h5>Changes to This Privacy Policy</h5>
-        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-        
-        <div class="last-updated">
-          <p>This policy is effective as of 2022-05-27</p>
-        </div>
-        
-        <h5>Contact Us</h5>
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at <a href="mailto:mysuperbrainin@gmail.com" style="color: #6a11cb;">mysuperbrainin@gmail.com</a>.</p>
+        <h6>
+          <b>www.mysuperbrain.com</b> is a product of <b>Bojja IT Solutions pvt. ltd</b>.
+        </h6>
       </div>
     </div>
   </section>
-  <!-- Privacy Policy Section End -->
+  <!-- About Us Section End -->
 
   <!-- Download Section Start -->
   <div id="download" class="p-3 card text-center bg-dark rounded-0">
@@ -363,17 +403,17 @@
   </a> 
 
   <!-- JavaScript Files -->
-  <script src="js/jquery-min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.js"></script>      
-  <script src="js/jquery.nav.js"></script>    
-  <script src="js/scrolling-nav.js"></script>    
-  <script src="js/jquery.easing.min.js"></script>     
-  <script src="js/nivo-lightbox.js"></script>     
-  <script src="js/jquery.magnific-popup.min.js"></script>     
-  <script src="js/form-validator.min.js"></script>
-  <script src="js/contact-form-script.js"></script>   
-  <script src="js/main.js"></script>
+  <script src="../js/jquery-min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/owl.carousel.js"></script>      
+  <script src="../js/jquery.nav.js"></script>    
+  <script src="../js/scrolling-nav.js"></script>    
+  <script src="../js/jquery.easing.min.js"></script>     
+  <script src="../js/nivo-lightbox.js"></script>     
+  <script src="../js/jquery.magnific-popup.min.js"></script>     
+  <script src="../js/form-validator.min.js"></script>
+  <script src="../js/contact-form-script.js"></script>   
+  <script src="../js/main.js"></script>
 </body>
 </html>

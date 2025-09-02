@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Careers | MySuperBrain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Join the MySuperBrain team and help us inspire creativity and imagination through art.">
+
+  <!--====== Favicon Icon ======-->
+  <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+  
+  <!-- Same stylesheets as index.html -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/LineIcons.css">
+  <link rel="stylesheet" href="../css/owl.carousel.css">
+  <link rel="stylesheet" href="../css/owl.theme.css">
+  <link rel="stylesheet" href="../css/magnific-popup.css">
+  <link rel="stylesheet" href="../css/nivo-lightbox.css">
+  <link rel="stylesheet" href="../css/main.css">    
+  <link rel="stylesheet" href="../css/responsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    /* Always keep navbar solid */
+    .navbar {
+      background: #2575fc !important;
+      transition: none !important;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    .navbar.scrolled,
+    .top-nav-collapse {
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%) !important;
+    }
+
+    /* Careers page styles */
+    .careers-section {
+      padding: 100px 0 60px;
+    }
+    
+    .careers-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .careers-header h2 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-weight: 700;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+    
+    .careers-header h2:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      border-radius: 2px;
+    }
+    
+    .careers-intro {
+      background: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    
+    .careers-intro p {
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-size: 1.1rem;
+    }
+    
+    .values-section {
+      margin: 50px 0;
+    }
+    
+    .values-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .values-header h3 {
+      color: #2575fc;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .value-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .value-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .value-icon {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 20px;
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 28px;
+    }
+    
+    .value-card h4 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    
+    .value-card p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .open-positions {
+      margin: 60px 0;
+    }
+    
+    .positions-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .positions-header h3 {
+      color: #2575fc;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    
+    .position-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      margin-bottom: 25px;
+      transition: all 0.3s ease;
+    }
+    
+    .position-card:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+    
+    .position-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .position-title {
+      color: #2c3e50;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+    
+    .position-meta {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    
+    .position-tag {
+      background: #f1f6ff;
+      color: #2575fc;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    
+    .position-description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    
+    .position-actions {
+      display: flex;
+      gap: 15px;
+    }
+    
+    .btn-outline {
+      background: transparent;
+      color: #2575fc;
+      border: 2px solid #2575fc;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    
+    .btn-outline:hover {
+      background: #2575fc;
+      color: #fff;
+    }
+    
+    .no-positions {
+      text-align: center;
+      padding: 40px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    .no-positions h4 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    
+    .no-positions p {
+      color: #666;
+      margin-bottom: 20px;
+    }
+    
+    .benefits-section {
+      margin: 60px 0;
+    }
+    
+    .benefits-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .benefits-header h3 {
+      color: #2575fc;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+    
+    .benefit-item {
+      background: #fff;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+    
+    .benefit-icon {
+      color: #2575fc;
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    
+    .benefit-item h4 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    
+    .benefit-item p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    .application-process {
+      margin: 60px 0;
+    }
+    
+    .process-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .process-header h3 {
+      color: #2575fc;
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+    
+    .process-steps {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0 -15px;
+    }
+    
+    .process-step {
+      flex: 1;
+      min-width: 250px;
+      margin: 0 15px 30px;
+      text-align: center;
+      position: relative;
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: 0 auto 20px;
+    }
+    
+    .process-step h4 {
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+    
+    .process-step p {
+      color: #666;
+      line-height: 1.6;
+    }
+    
+    @media (max-width: 768px) {
+      .position-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
+      .process-steps {
+        flex-direction: column;
+      }
+      
+      .process-step {
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+  <style>
+    .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        background: #6a11cb;
+        transform: translateY(-3px);
+    }
+
+    .copyright {
+        padding: 20px 0 !important; 
+        margin:0 !important;
+        text-align: center !important;
+    }
+
+    .copyright p {
+        color: #777 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader" id="loader-1"></div>
+  </div>
+
+  <!-- Header Section Start --> 
+  <header id="home" class="hero-area">    
+    <div class="overlay">
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="../img/logo-1.png" alt="" style="height: 60px;"></a>       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#about">About</a>
+            </li>                            
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#showcase">Showcase</a>
+            </li>       
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#">Competitions</a>
+            </li>     
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#team">Team</a>
+            </li> 
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="../girlpowertelangana/index.html">Superstars</a>
+            </li>  
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="contact.html">Contact</a>
+            </li> 
+            <li class="nav-item">
+              <a class="btn btn-singin page-scroll" href="#download">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>  
+  </header>
+  <!-- Header Section End -->
+
+  <!-- Careers Section -->
+  <section id="careers" class="careers-section">
+    <div class="container">
+      <div class="careers-header">
+        <h2>Join Our Team</h2>
+        <p>Help us inspire creativity and imagination through art</p>
+      </div>
+      
+      <div class="careers-intro">
+        <p>At MySuperBrain, we're building a platform that helps children discover and develop their creative potential. We believe in the power of art to transform lives and are looking for passionate individuals to join us on this journey.</p>
+        <p>We're currently a small but growing team dedicated to creating the best possible experience for our users. If you're passionate about education, technology, and making a difference, we'd love to hear from you.</p>
+      </div>
+      
+      <!-- Values Section -->
+      <div class="values-section">
+        <div class="values-header">
+          <h3>Our Values</h3>
+          <p>These principles guide everything we do</p>
+        </div>
+        
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4>Creativity</h4>
+            <p>We encourage innovative thinking and novel approaches to problem-solving in everything we do.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Collaboration</h4>
+            <p>We believe that the best results come from working together and leveraging our diverse perspectives.</p>
+          </div>
+          
+          <div class="value-card">
+            <div class="value-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h4>Passion</h4>
+            <p>We're deeply committed to our mission of helping children discover and develop their creative potential.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Open Positions Section -->
+      <div class="open-positions">
+        <div class="positions-header">
+          <h3>Open Positions</h3>
+          <p>Join our team and help shape the future of creative education</p>
+        </div>
+        
+        <!-- Example Position 1 -->
+        <div class="position-card">
+          <div class="position-header">
+            <h3 class="position-title">Frontend Developer</h3>
+            <div class="position-meta">
+              <span class="position-tag">Full-time</span>
+              <span class="position-tag">Remote</span>
+            </div>
+          </div>
+          <div class="position-description">
+            <p>We're looking for a skilled Frontend Developer to help build and improve our educational platform. You'll work with modern technologies to create engaging and accessible experiences for our users.</p>
+          </div>
+          <div class="position-actions">
+            <a href="#" class="btn-outline">View Details</a>
+            <a href="contact.html" class="btn-common">Apply Now</a>
+          </div>
+        </div>
+        
+        <!-- Example Position 2 -->
+        <div class="position-card">
+          <div class="position-header">
+            <h3 class="position-title">Content Creator</h3>
+            <div class="position-meta">
+              <span class="position-tag">Part-time</span>
+              <span class="position-tag">Remote</span>
+            </div>
+          </div>
+          <div class="position-description">
+            <p>We need a creative Content Creator to develop engaging educational materials and activities for children. If you have a background in art education and love creating fun learning experiences, this role is for you.</p>
+          </div>
+          <div class="position-actions">
+            <a href="#" class="btn-outline">View Details</a>
+            <a href="contact.html" class="btn-common">Apply Now</a>
+          </div>
+        </div>
+        
+        <!-- No positions available message (initially hidden) -->
+        <div class="no-positions" style="display: none;">
+          <h4>No Open Positions at the Moment</h4>
+          <p>We're not currently hiring, but we're always interested in hearing from talented people who are passionate about our mission.</p>
+          <p>Feel free to send us your resume anyway, and we'll keep it on file for future opportunities.</p>
+          <a href="contact.html" class="btn-common">Submit Your Resume</a>
+        </div>
+      </div>
+      
+      <!-- Benefits Section -->
+      <div class="benefits-section">
+        <div class="benefits-header">
+          <h3>Why Work With Us</h3>
+          <p>We value our team members and offer competitive benefits</p>
+        </div>
+        
+        <div class="benefits-grid">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <h4>Health & Wellness</h4>
+            <p>Comprehensive health insurance and wellness programs to keep you at your best.</p>
+          </div>
+          
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h4>Learning & Development</h4>
+            <p>Continuous learning opportunities with access to courses, conferences, and workshops.</p>
+          </div>
+          
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <h4>Flexible Time Off</h4>
+            <p>Generous vacation policy and flexible working hours to maintain work-life balance.</p>
+          </div>
+          
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h4>Remote Work</h4>
+            <p>Work from anywhere with our remote-friendly policies and support.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Application Process Section -->
+      <div class="application-process">
+        <div class="process-header">
+          <h3>Our Hiring Process</h3>
+          <p>Here's what you can expect when you apply to join our team</p>
+        </div>
+        
+        <div class="process-steps">
+          <div class="process-step">
+            <div class="step-number">1</div>
+            <h4>Application Review</h4>
+            <p>We carefully review each application to find candidates whose skills and experience align with our needs.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">2</div>
+            <h4>Initial Interview</h4>
+            <p>A casual conversation to learn more about your background, interests, and career goals.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">3</div>
+            <h4>Skills Assessment</h4>
+            <p>A practical task or technical interview to evaluate your skills relevant to the role.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">4</div>
+            <h4>Team Interview</h4>
+            <p>Meet other team members to ensure there's a good cultural fit from all perspectives.</p>
+          </div>
+          
+          <div class="process-step">
+            <div class="step-number">5</div>
+            <h4>Offer</h4>
+            <p>If it's a good match, we extend an offer and welcome you to the MySuperBrain team!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section Start -->
+  <div id="download" class="p-3 card text-center bg-dark rounded-0">
+    <div class="row">
+      <div class="col-6 text-start">
+        <a href="https://play.google.com/store/apps/details?id=com.grapplesoft.msb_app" target="_blank">
+          <img src="https://dwellite.com/assets/img/androiddownload.png" 
+            style="width: 200px;" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="col-6 text-end">
+        <a href="" target="_blank">
+          <img src="https://dwellite.com/assets/img/iosdownload.png" 
+            style="width: 200px;" alt="Download on the App Store">
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- Download Section End -->
+
+  <!-- Footer Section Start -->
+  <footer style="background:#111; color:#fff;">
+    <!-- Footer Area Start -->
+    <section id="footer-Content" style="padding:20px 0; margin:0;">
+      <div class="container">
+        <!-- Start Row -->
+        <div class="row" style="display:flex; flex-wrap:wrap; align-items:flex-start; justify-content:space-between;">
+
+          <!-- Logo Column -->
+          <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px; flex:1;">
+            <div class="footer-logo" style="margin-bottom:8px;">
+              <img src="../img/logo-1.png" alt="Logo" 
+                  style="height:60px; filter:brightness(0) invert(1); padding:2px;">
+            </div>
+            <p style="font-size:14px; line-height:22px; color:#ccc;">
+              Inspiring creativity & imagination through art. Our platform helps children develop their skills in a fun and engaging way.
+            </p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/mysuperbrain"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.linkedin.com/company/mysuperbrain"><i class="fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@mysuperbrain22"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/msbdotcom/"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <!-- End Col -->
+
+          <!-- Right Side (Company + Media) -->
+          <div style="display:flex; gap:40px; flex-wrap:wrap; justify-content:flex-end; flex:1;"></div>
+            <!-- Company Links -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+              <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Company</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                  <li><a href="../index.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Home</a></li>
+                  <li><a href="../about-us/about_us.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">About Us</a></li>
+                  <li><a href="../careers/careers.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Career</a></li>
+                  <li><a href="../contact-us/contact_us.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- End Col -->
+
+            <!-- Media Links -->
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+              <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Media</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                  <li><a href="https://www.facebook.com/mysuperbrain" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Facebook</a></li>
+                  <li><a href="https://www.linkedin.com/company/mysuperbrain/" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">LinkedIn</a></li>
+                  <li><a href="https://www.youtube.com/@mysuperbrain22" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Youtube</a></li>
+                  <li><a href="https://www.instagram.com/msbdotcom/" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-6 col-mb-12" style="margin-bottom:20px;">
+              <div class="widget">
+                <h3 class="block-title" style="font-size:18px; margin-bottom:15px; color:#fff;">Legal</h3>
+                <ul class="menu" style="list-style:none; padding:0; margin:0;">
+                  <li><a href="../privacy-policy.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Privacy Policy</a></li>
+                  <li><a href="../terms-conditions.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Terms of Service</a></li>
+                  <li><a href="../support.html" style="color:#ccc; text-decoration:none; display:block; margin-bottom:8px;">Support</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Col -->
+
+        </div>
+      </div>
+            <div class="copyright">
+                <p>&copy; 2025 MySuperBrain. All rights reserved.</p>
+            </div>
+    </section>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Go To Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="lni-chevron-up"></i>
+  </a> 
+
+  <!-- JavaScript Files -->
+  <script src="../js/jquery-min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/owl.carousel.js"></script>      
+  <script src="../js/jquery.nav.js"></script>    
+  <script src="../js/scrolling-nav.js"></script>    
+  <script src="../js/jquery.easing.min.js"></script>     
+  <script src="../js/nivo-lightbox.js"></script>     
+  <script src="../js/jquery.magnific-popup.min.js"></script>     
+  <script src="../js/form-validator.min.js"></script>
+  <script src="../js/contact-form-script.js"></script>   
+  <script src="../js/main.js"></script>
+</body>
+</html>
